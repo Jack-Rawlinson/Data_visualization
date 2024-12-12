@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="File_input">
+        <label for="file_input">Upload file</label>
+        <input type="file" id="fileinput" name="file_input"><br>
+        <input type="checkbox" id="header" checked>Ignore file header?
+        <select>
+            <option selected value="Scatter">Scatter</option>
+            <option value="Bar">Bar chart</option>
+        </select>
+    </div>
+    <p id="Debug"></p>
+    <div id="Plot_div" style="display:none">
+        <canvas id="mygraph"></canvas>
+    </div>
+
+    <script type="module" src = "Data_visualization.js"></script>
+</body>
